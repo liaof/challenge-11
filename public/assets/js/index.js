@@ -51,9 +51,12 @@ const deleteNote = (id) =>
     },
 });
 
+//upon clicking a left hand existing note
 const renderActiveNote = () => {
   hide(saveNoteBtn);
-
+  console.log(activeNote.title);
+  console.log(activeNote.text);
+  console.log(noteTitle);
   if (activeNote.id) {
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
@@ -65,6 +68,7 @@ const renderActiveNote = () => {
     noteTitle.value = '';
     noteText.value = '';
   }
+  console.log(noteTitle);
 };
 
 const handleNoteSave = () => {

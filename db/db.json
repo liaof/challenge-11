@@ -1,31 +1,19 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text"
+      "title": "ayyyyyy",
+      "text": "lmao",
+      "id": "0"
     },
     {
-      "title": "Test Title 2",
-      "text": "Test text 2"
-    },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {
-      "title": "asdsad",
-      "text": "asdasd"
+      "title": "aaaaaaaa",
+      "text": "poop",
+      "id": "1"
     },
     {
-      "title": "asdasdssdsdsds",
-      "text": "asdasdsadsd"
+      "title": "hello",
+      "text": "there",
+      "id": "2"
     }
   ]
 }

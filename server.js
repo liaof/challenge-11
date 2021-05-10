@@ -29,6 +29,7 @@ app.get('/api/notes', (req,res) =>{
 
 app.post('/api/notes', (req, res) => {
     console.log(req.body);
+    req.body.id = notes.length.toString();
     console.log(notes);
     const note = createNewNote(req.body, notes);
     res.json(note);
@@ -38,9 +39,11 @@ app.post('/api/notes', (req, res) => {
 app.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname,'./public/index.html'));
 });
-//opens notes.html when our endpoint is URL/notes
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/notes.html'));
+    res.sendFile(path.join(__dirname, './public/notes.html'));//opens notes.html when our endpoint is URL/notes
+});
+app.get('*', (req, res) => {//catch unspecified endpoints
+    res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 function createNewNote( body,notesArr){
