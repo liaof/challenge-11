@@ -34,6 +34,15 @@ app.post('/api/notes', (req, res) => {
     res.json(note);
 });
 
+// HTML serve routes
+app.get('/', (req,res)=>{
+    res.sendFile(path.join(__dirname,'./public/index.html'));
+});
+//opens notes.html when our endpoint is URL/notes
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
 function createNewNote( body,notesArr){
     console.log(body);
     const note = body;
