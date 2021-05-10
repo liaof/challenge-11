@@ -14,6 +14,10 @@ pen icon in the navbar, and the text will reset ready for you input.
 - to edit a note, click on it in the left hand side list, then move over to the text inputs and edit away
 - to delete a note, click on the corresponding bin icon, in the left hand side list
 
+### Screenshot/Video
+
+[App in action](https://www.youtube.com/watch?v=P5jmPT69nPM)
+
 ### Resources Used
 Chapter 11 of the reading materials is basically a step by step instruction for this project
 AskBCS for tips concerning POST methods
